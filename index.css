@@ -33,7 +33,7 @@ h1, h2 {
 }
 
 #container {
-  margin-top: 10vh;
+  margin-top: 3vh;
 }
 
 #content {
@@ -44,6 +44,6 @@ h1, h2 {
   flex-flow: row wrap;
   max-width: 77ch;
   text-align: center;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }

@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
       word = word.toLowerCase();
       const found = Object.keys(emojis).filter(key => {return key.startsWith(word) || key.includes(word)});
 
-      if (found.length > 0) e.target.innerText = getRandomEmojiFromKey(found)
+      if (found.length > 0) e.target.innerHTML = getRandomEmojiFromKey(found) + "&nbsp;";
     });
   }
   
