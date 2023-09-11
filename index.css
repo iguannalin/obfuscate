@@ -1,0 +1,49 @@
+/* @import url(small.css) (min-width:0px);
+@import url(large.css) (min-width:900px); */
+
+:root {
+  --main-bg-color: rgb(35, 35, 35);
+  --main-text-color: #f9faffde;
+  --shadow-color: #858ebc;
+}
+
+html {
+  display: block;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  text-shadow: var(--shadow-color) -2px 2px 8px;
+  cursor: pointer;
+}
+
+h1, h2 {
+  font-size: 18px;
+  color: hsl(54.06deg 99.99% 58.75% / 93%);
+  text-shadow: #565842 -3px 2px 3px;
+  font-weight: normal;
+  font-family: sans-serif, Helvetica;
+  font-style: italic;
+}
+
+#container {
+  margin-top: 10vh;
+}
+
+#content {
+  width: 80vw;
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  max-width: 77ch;
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+}
