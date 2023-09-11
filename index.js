@@ -15,9 +15,10 @@ window.addEventListener("load", () => {
       if (!word) return;
       word = word.toLowerCase();
       const found = Object.keys(emojis).filter(key => {return key.startsWith(word) || key.includes(word)});
-
       if (found.length > 0) e.target.innerHTML = getRandomEmojiFromKey(found) + "&nbsp;";
     });
+    e.target.removeEventListener("touchstart", onHover);
+    e.target.removeEventListener("mouseover", onHover);
   }
   
 
@@ -32,6 +33,7 @@ window.addEventListener("load", () => {
       line.split(" ").forEach((word) => {
         const text = document.createElement("span");
         text.innerHTML += (word + `&nbsp;`);
+        text.addEventListener("touchstart", onHover);
         text.addEventListener("mouseover", onHover);
         content.appendChild(text);
       }) 
